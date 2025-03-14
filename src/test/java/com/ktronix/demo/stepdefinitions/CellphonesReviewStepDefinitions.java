@@ -1,7 +1,7 @@
 package com.ktronix.demo.stepdefinitions;
 
 import com.ktronix.demo.models.CellphonesReviewModel;
-import com.ktronix.demo.tasks.CellphonesReviewTasks.ViewCellphoneByScreen;
+import com.ktronix.demo.tasks.CellphonesReviewTasks.ViewCellphoneByRam;
 import com.ktronix.demo.tasks.CellphonesReviewTasks.ViewCellphoneByStorage;
 import com.ktronix.demo.tasks.CheckCategoryHeader;
 import com.ktronix.demo.tasks.CellphonesReviewTasks.ViewCellphoneByBrand;
@@ -65,22 +65,23 @@ public class CellphonesReviewStepDefinitions {
         );
     }
 
-    @Cuando("^Selecciona un tamanio de pantalla en categoria celulares$")
-    public void seleccionaUnTamanioDePantallaEnCategoriaCelulares(List<CellphonesReviewModel> cellphonesReviewList) {
+
+    @Cuando("^Selecciona una memoria ram en categoria$")
+    public void seleccionaUnaMemoriaRamEnCategoria(List<CellphonesReviewModel> cellphonesReviewList) {
         Bryan.wasAbleTo(
-                ViewCellphoneByScreen.selectScreen(cellphonesReviewList.get(0).getTamanioPantalla())
+                ViewCellphoneByRam.selectRam(cellphonesReviewList.get(0).getRam())
         );
+
+
+
+
 
     }
 
-    @Entonces("^Valida filtro correspondiente al tamanio de pantalla elegido$")
-    public void validaFiltroCorrespondienteAlTamanioDePantallaElegido(List<CellphonesReviewModel> cellphonesReviewList) {
+    @Entonces("^Valida filtro correspondiente a la ram elegida$")
+    public void validaFiltroCorrespondienteALaRamElegida(List<CellphonesReviewModel> cellphonesReviewList) {
         Bryan.wasAbleTo(
-
-
-
+                CheckFirstFilterApplied.compareText(cellphonesReviewList.get(0).getRam())
         );
     }
-
-
 }

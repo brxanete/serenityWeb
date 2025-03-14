@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(plugin = {"pretty", "html:target/cucumber/fast-report/cucumber-pretty.html",
         "json:target/cucumber/cucumber.json"},
-        features = "src/test/java/resources/login.feature",
+        features = "src/test/java/resources/features/login.feature",
 tags = "@LOGIN_DEMO",
 glue = "com.ktronix.demo.stepdefinitions",
 snippets = SnippetType.CAMELCASE )

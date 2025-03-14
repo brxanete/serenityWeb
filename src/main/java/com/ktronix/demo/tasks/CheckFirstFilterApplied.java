@@ -26,7 +26,6 @@ public class CheckFirstFilterApplied implements Task {
     @Override
     public <X extends Actor> void performAs(X Bryan) {
         Bryan.wasAbleTo(
-            //    WaitUntil.the(TXT_RESULTS_COUNT, isVisible()),
                 WaitUntil.the(TXT_FILTER_ONE, isVisible()));
 
 

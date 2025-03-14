@@ -18,6 +18,7 @@ public class DeployProductCategory implements Interaction {
     public DeployProductCategory(String replaceLocator) {
         this.replaceLocator = replaceLocator;
     }
+
     public static DeployProductCategory deploy(String replaceLocator){
         return instrumented (DeployProductCategory.class, replaceLocator);
     }

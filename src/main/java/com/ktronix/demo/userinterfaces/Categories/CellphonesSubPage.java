@@ -46,6 +46,8 @@ public class CellphonesSubPage {
     public static final Target BTN_BACK_CAMERA_CUADRUPLE = Target.the("BUTTON BACK CAMERA CUADRUPLE'").located(By.xpath("//a[@title='Cuádruple']"));
 
 
+    public static final Target BTN_2GB_RAM = Target.the("BUTTON 2GB RAM'").located(By.xpath("//li/a[@title='2 GB']"));
+    public static final Target BTN_4GB_RAM = Target.the("BUTTON 4GB RAM'").located(By.xpath("//li/a[@title='4 GB']"));
 
 
 

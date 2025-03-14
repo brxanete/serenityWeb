@@ -3,7 +3,9 @@ package com.ktronix.demo.tasks.LoginTasks;
 import com.ktronix.demo.interactions.LoginInteractions.*;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
+import net.serenitybdd.screenplay.actions.Click;
 
+import static com.ktronix.demo.userinterfaces.LoginPage.BTN_LOGIN;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 

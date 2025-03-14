@@ -10,6 +10,8 @@ public class CellphonesReviewModel {
 
     String tamanioPantalla;
 
+    String ram;
+
 
     public String getMarca() {
         return marca;
@@ -21,5 +23,9 @@ public class CellphonesReviewModel {
 
     public String getTamanioPantalla() {
         return tamanioPantalla;
+    }
+
+    public String getRam() {
+        return ram;
     }
 }

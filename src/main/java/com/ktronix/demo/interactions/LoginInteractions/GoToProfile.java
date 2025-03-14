@@ -25,6 +25,5 @@ public class GoToProfile implements Interaction {
         Bryan.wasAbleTo(
                 WaitUntil.the(BTN_PROFILE, isVisible()),
                 Click.on(BTN_PROFILE));
-
     }
 }
