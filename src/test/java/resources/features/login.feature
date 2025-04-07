@@ -18,7 +18,7 @@ Característica: Modulo inicio de sesión
     Ejemplos:
       | correoElectronico            | contrasena        |
       ##@externaldata@src/test/java/resources/data/credenciales.csv
-      | pruebas.corbetantt@gmail.com | contrasenaIncorrecta |
+
 
 
 #  @INCORRECT_PASSWORD

@@ -109,9 +109,7 @@ public class FeatureWritingUtil {
 					/*if(mapData.getValue().equalsIgnoreCase(String.valueOf(cont))) {*/
 					cellData.append("|" + mapData.getValue());
 					cont++;
-/*                	} else if(mapData.getValue().isBlank()) {
-                		flag = false;
-                	}*/
+
 				}
                 
 				if(flag) {
