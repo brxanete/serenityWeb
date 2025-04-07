@@ -2,6 +2,7 @@ package com.ktronix.demo.interactions.LoginInteractions;
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Interaction;
+import net.serenitybdd.screenplay.actions.Clear;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 
@@ -27,6 +28,7 @@ public class EnterMail implements Interaction {
     public <X extends Actor> void performAs(X Bryan) {
         Bryan.attemptsTo(
                 WaitUntil.the(INP_MAIL, isVisible()),
+                Clear.field(INP_MAIL),
                 theValue(mail).into(INP_MAIL),
                 Click.on(BTN_PROCEED));
 

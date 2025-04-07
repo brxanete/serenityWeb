@@ -17,9 +17,7 @@ public class AddToCartStepDefinitions {
 
     @Before
     public void preparedActorStage() {
-        // Prepara todas la habilidades del actor (Web, mobile, API, desktop) por escenario
         OnStage.setTheStage(new OnlineCast());
-        // El actor puede navegar a través de la web con el webDriver
         Bryan.can(BrowseTheWeb.with(webDriver));
     }
 
