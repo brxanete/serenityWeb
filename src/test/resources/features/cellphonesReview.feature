@@ -47,12 +47,10 @@ Característica: Modulo categoria de productos
 
     Ejemplos:
       | almacenamiento |
-      | 32 GB          |
       | 64 GB          |
       | 128 GB         |
       | 256 GB         |
       | 512 GB         |
-      | 1 Tera         |
 
 
 
@@ -69,7 +67,7 @@ Característica: Modulo categoria de productos
 
     Ejemplos:
       | ram  |
-      | 2 GB |
+      | 4 GB |
 
 
 

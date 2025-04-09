@@ -28,20 +28,6 @@ public class MailReview implements Task {
 
     @Override
     public <X extends Actor> void performAs(X Bryan) {
-        Bryan.wasAbleTo(DeployUserMenu.deployMyAccount(), GoToLogin.clickLogin());
-
-//        int count = 0;  // inicia en count 0
-//        while (count < 8) { //  Se detiene en este caso en count 5
-//            count++;
-//            Bryan.attemptsTo(WaitUntil.the(INP_MAIL, isVisible()), Clear.field(INP_MAIL), theValue(mail).into(INP_MAIL));
-//
-//            count++; //El correo se ingresa 5 veces porque aumenta 2 en cada iteracion
-//
-//
-//        }
-//    }
-//}
-
         Bryan.wasAbleTo(
                 DeployUserMenu.deployMyAccount(),
                 GoToLogin.clickLogin(),
