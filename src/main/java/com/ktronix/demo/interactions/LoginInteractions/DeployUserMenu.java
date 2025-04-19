@@ -2,11 +2,13 @@ package com.ktronix.demo.interactions.LoginInteractions;
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Interaction;
+import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.MoveMouse;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 
 import static com.ktronix.demo.userinterfaces.HomePage.BTN_MYACCOUNT;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
+import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isEnabled;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
 public class DeployUserMenu implements Interaction {
@@ -18,7 +20,8 @@ public class DeployUserMenu implements Interaction {
     public <X extends Actor> void performAs(X Bryan) {
         Bryan.attemptsTo(
                 WaitUntil.the(BTN_MYACCOUNT, isVisible()),
-                MoveMouse.to(BTN_MYACCOUNT));
+                WaitUntil.the(BTN_MYACCOUNT, isEnabled()),
+                Click.on(BTN_MYACCOUNT));
 
 
     }

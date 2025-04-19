@@ -1,18 +1,18 @@
 package com.ktronix.demo.interactions.LoginInteractions;
 
-import com.ktronix.demo.userinterfaces.LoginPage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Interaction;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 
 
-import static com.ktronix.demo.userinterfaces.HomePage.BTN_MYACCOUNT;
-import static com.ktronix.demo.userinterfaces.LoginPage.BTN_LOGIN;
+import static com.ktronix.demo.userinterfaces.LoginPage.BTN_CONTINUE;
 import static com.ktronix.demo.userinterfaces.LoginPage.INP_PASSWORD;
+
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 import static net.serenitybdd.screenplay.actions.Enter.theValue;
+import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isEnabled;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
 public class EnterPass implements Interaction {
@@ -30,9 +30,12 @@ public class EnterPass implements Interaction {
     @Override
     public <X extends Actor> void performAs(X Bryan) {
         Bryan.attemptsTo(
-                WaitUntil.the(BTN_LOGIN, isVisible()),
+                WaitUntil.the(INP_PASSWORD, isVisible()),
+                WaitUntil.the(INP_PASSWORD, isEnabled()),
                 theValue(password).into(INP_PASSWORD),
-                Click.on(LoginPage.BTN_LOGIN));
+                WaitUntil.the(BTN_CONTINUE, isVisible()),
+                WaitUntil.the(BTN_CONTINUE, isEnabled()),
+                Click.on(BTN_CONTINUE));
 
 
     }

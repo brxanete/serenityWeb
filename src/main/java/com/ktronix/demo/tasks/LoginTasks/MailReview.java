@@ -5,6 +5,7 @@ import com.ktronix.demo.interactions.LoginInteractions.EnterMail;
 import com.ktronix.demo.interactions.LoginInteractions.GoToLogin;
 import net.serenitybdd.screenplay.*;
 import net.serenitybdd.screenplay.actions.Clear;
+import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 
 import static com.ktronix.demo.userinterfaces.MailPage.INP_MAIL;
@@ -28,14 +29,14 @@ public class MailReview implements Task {
 
     @Override
     public <X extends Actor> void performAs(X Bryan) {
+
         Bryan.wasAbleTo(
                 DeployUserMenu.deployMyAccount(),
-                GoToLogin.clickLogin(),
+//                GoToLogin.clickLogin(),
                 EnterMail.inputMail(mail));
 
     }
 }
-
 
 
 
