@@ -8,7 +8,7 @@
     <artifactId>KTronixDemo</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <name>KtronixScreenplay</name>
+    <name>EcommerceScreenplay</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

@@ -3,8 +3,8 @@
 Característica: Modulo inicio de sesión
 
   @CORRECT_LOGIN
-  Esquema del escenario: Iniciar sesión correctamente en Ktronix
-    Dado Que el usuario ingresa a Ktronix.com
+  Esquema del escenario: Iniciar sesión correctamente en Ecommerce
+    Dado Que el usuario ingresa a Ecommerce.com
     Cuando Verifica correo electronico
       | correoElectronico   |
       | <correoElectronico> |
@@ -22,8 +22,8 @@ Característica: Modulo inicio de sesión
 
 
 #  @INCORRECT_PASSWORD
-#  Esquema del escenario: Iniciar sesión incorrectamente en Ktronix
-#    Dado Que el usuario ingresa a Ktronix.com
+#  Esquema del escenario: Iniciar sesión incorrectamente en Ecommerce
+#    Dado Que el usuario ingresa a Ecommerce.com
 #    Cuando Verifica correo electronico
 #      | correoElectronico   |
 #      | <correoElectronico> |
@@ -38,8 +38,8 @@ Característica: Modulo inicio de sesión
 #
 #
 #  @INCORRECT_MAIL
-#  Esquema del escenario: Autenticacion incorrecta con correo en Ktronix
-#    Dado Que el usuario ingresa a Ktronix.com
+#  Esquema del escenario: Autenticacion incorrecta con correo en Ecommerce
+#    Dado Que el usuario ingresa a Ecommerce.com
 #    Cuando Verifica correo electronico
 #      | correoElectronico   |
 #      | <correoElectronico> |

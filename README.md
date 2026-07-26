@@ -4,7 +4,7 @@
 
 Este proyecto es una automatización de pruebas de interfaz web basada en Java, Maven, Selenium, Serenity BDD y Cucumber.
 
-Su propósito es validar flujos de negocio sobre la plataforma de Ktronix utilizando el patrón Screenplay de Serenity, lo que permite separar la lógica de negocio, las interacciones con la interfaz y los elementos de la UI en módulos bien definidos.
+Su propósito es validar flujos de negocio sobre la plataforma de Ecommerce utilizando el patrón Screenplay de Serenity, lo que permite separar la lógica de negocio, las interacciones con la interfaz y los elementos de la UI en módulos bien definidos.
 
 ### Tecnologías principales
 - Java 11 (recomendado para este proyecto)
@@ -50,7 +50,7 @@ Aquí se definen los escenarios en lenguaje Gherkin. Ejemplo:
 
 #### Capa de step definitions
 Ubicada en:
-- src/test/java/com/ktronix/demo/stepdefinitions/
+- src/test/java/com/ecommerce/demo/stepdefinitions/
 
 Aquí se enlazan las frases de los feature files con la lógica de automatización.
 
@@ -61,7 +61,7 @@ Ejemplo:
 
 #### Capa de tareas y acciones
 Ubicada en:
-- src/main/java/com/ktronix/demo/tasks/
+- src/main/java/com/ecommerce/demo/tasks/
 
 Contiene la lógica de negocio representada como tareas del patrón Screenplay.
 
@@ -72,13 +72,13 @@ Ejemplos:
 
 #### Capa de interacciones
 Ubicada en:
-- src/main/java/com/ktronix/demo/interactions/
+- src/main/java/com/ecommerce/demo/interactions/
 
 Representa acciones específicas sobre la interfaz, como hacer clic, desplegar menús, abrir secciones o seleccionar filtros.
 
 #### Capa de user interfaces
 Ubicada en:
-- src/main/java/com/ktronix/demo/userinterfaces/
+- src/main/java/com/ecommerce/demo/userinterfaces/
 
 Aquí se definen los localizadores (Targets) de cada elemento de la página.
 
@@ -92,19 +92,19 @@ Ejemplos:
 
 #### Capa de preguntas
 Ubicada en:
-- src/main/java/com/ktronix/demo/questions/
+- src/main/java/com/ecommerce/demo/questions/
 
 Se utilizan para validar si un elemento o texto se encuentra como se espera.
 
 #### Capa de modelos
 Ubicada en:
-- src/main/java/com/ktronix/demo/models/
+- src/main/java/com/ecommerce/demo/models/
 
 Representa los datos de entrada utilizados por los escenarios.
 
 #### Capa de utilidades
 Ubicada en:
-- src/main/java/com/ktronix/demo/utils/
+- src/main/java/com/ecommerce/demo/utils/
 
 Contiene utilidades para lectura de archivos CSV, manejo de locators y procesamiento de datos.
 
@@ -124,7 +124,7 @@ serenityWeb/
 │   ├── main/
 │   │   └── java/
 │   │       └── com/
-│   │           └── ktronix/
+│   │           └── ecommerce/
 │   │               └── demo/
 │   │                   ├── exceptions/
 │   │                   ├── interactions/
@@ -136,7 +136,7 @@ serenityWeb/
 │   └── test/
 │       ├── java/
 │       │   └── com/
-│       │       └── ktronix/
+│       │       └── ecommerce/
 │       │           └── demo/
 │       │               ├── runners/
 │       │               └── stepdefinitions/

@@ -6,7 +6,7 @@ Característica: Modulo categoria de productos
   @VIEW_CELLPHONES_BY_BRAND
 
   Esquema del escenario: Ver celulares filtrados por marca
-    Dado Que el usuario ingresa a Ktronix.com
+    Dado Que el usuario ingresa a Ecommerce.com
     Cuando Selecciona una marca en categoria celulares
       | marca   |
       | <marca> |
@@ -36,7 +36,7 @@ Característica: Modulo categoria de productos
 
   @VIEW_CELLPHONES_BY_STORAGE
   Esquema del escenario: Ver celulares filtrados por almacenamiento
-    Dado Que el usuario ingresa a Ktronix.com
+    Dado Que el usuario ingresa a Ecommerce.com
     Cuando Selecciona un almacenamiento en categoria celulares
       | almacenamiento   |
       | <almacenamiento> |
@@ -58,7 +58,7 @@ Característica: Modulo categoria de productos
 
   @VIEW_CELLPHONES_BY_RAM
   Esquema del escenario: Ver celulares filtrados por RAM
-    Dado Que el usuario ingresa a Ktronix.com
+    Dado Que el usuario ingresa a Ecommerce.com
     Cuando Selecciona una memoria ram en categoria
       | ram   |
       | <ram> |
